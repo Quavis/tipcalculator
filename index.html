@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>How Much To Tip?</title>
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:400|Open+Sans:300,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Dragon Tip Calculator</h1>
+        <form>
+            <fieldset>
+            <h2>Bill Amount</h2>
+                <input id="billamt" type="text" placeholder="Bill Amount"> 
+                </fieldset>
+               <h3>Quality of Service</h3>
+
+              <fieldset>
+                    <select id="serviceQual">
+                    <option disabled selected value="0">--Choose an Option</option>
+                    <option value="0.3">30&#37; &#45; Outstanding</option>
+                    <option value="0.2">20&#37; &#45; Good</option>
+                    <option value="0.15">15&#37; &#45; It was OK</option>
+                    <option value="0.1">10&#37; &#45; Bad</option>
+                    <option value="0.05">5&#37; &#45; Terrible</option>
+                    </select>
+                    </fieldset>
+
+                </form>
+                <fieldset>
+                <h4>Number of People Splitting Bill</h4>
+                <input id="peopleamt" type="text" placeholder="Number Of People"> 
+                <button type ="button" id="calculate"> Calculate</button>
+                </fieldset>
+                </div>
+
+                <fieldset>
+                <div id="totalTip">
+                    <sup>$</sup><span id="tip">0.00</span>
+                    <small id="each">each</small>
+                </div>
+                </fieldset>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
